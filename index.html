@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FTC - win95</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div>
+    <ul id="listApps">
+        <li onclick="myComputerFunction()">
+            <img id="computerImg" src="./graphic/icons/pc.png">
+            <br>
+            <a>computer</a>
+        </li>
+        <br>
+        <li onclick="myTrashFunction()">
+            <img id="trashbinImg" src="./graphic/icons/trashbin.png">
+            <br>
+            <a id="trashbinA">trash</a>
+        </li>
+        <br>
+        <li onclick="myTrollFunction()">
+            <img id="trollImg" src="./graphic/icons/troll.png">
+            <br>
+            <a id="trollA">troll.exe</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<div id="computerPopup" class="computerPopupHidden">
+    <button id="computerButtonClose" onclick="myComputerFunction2()"></button>
+    <div id="computerContent">
+        <h3 id="computerText"><img src="./graphic/icons/window/error95.png" id="error95Pc">You are unable to open this folder!<br><br>ErrorCode:01110101 00100000 01100111 01100001 01111001 0001010)</h3>
+    </div>
+</div>
+
+
+
+
+<div id="trashPopup" class="trashPopupHidden">
+    <button id="trashButtonClose" onclick="myTrashFunction2()"></button>
+    <div id="trashContent">
+        <div onclick="myImageFileFunction()">
+            <img src="./graphic/icons/image.png" id="imageFile">
+            <p id="trashText">&lt3.jpg</p>
+        </div>
+    </div>
+</div>
+<div id="ImageFilePopup" class="ImageFilePopupHidden">
+    <button id="ImageFileButtonClose" onclick="myImageFileFunction2()"></button>
+    <div id="ImageFileContent">
+        <a href="https://discord.gg/E4Gu9GyGc5"><img src="./graphic/idp.jpeg" id="IDP"></a>
+    </div>
+</div>
+
+
+
+
+
+<div id="trollPopup" class="trollPopupHidden">
+    <button id="trollButtonClose" onclick="myTrollFunction2()"></button>
+    <div id="trollContent">
+        <h3 id="trollText"><img src="./graphic/icons/window/alert95.png" id="alert95Troll">You've been trolled!</h3>
+        <a href="./pages/funnyman.html"><button id="trollButton">Ok</button></a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div id="winbar">
+    <button id="winbutton">Start</button>
+</div>
+
+
+
+
+
+
+
+<!--<div id="blackscreen">
+</div>
+<div id="screenloading" class="screenloading">
+    <img src="./graphic/win95load.gif" id="loading95">
+</div>-->
+<div id="screen" class="screen">
+    <img src="./graphic/scanlines.png" id="scan">
+</div>
+
+
+<audio autoplay>
+    <source src="./audio/pcstart.mp3" type="audio/mp3">
+</audio>
+<audio id="win95sound">
+    <source src="./audio/win95.mp3" type="audio/mp3">
+</audio>
+<audio id="fansound" loop="loop">
+    <source src="./audio/fansound.mp3" type="audio/mp3">
+</audio>
+<audio id="error95">
+    <source src="./audio/error95.mp3" type="audio/mp3">
+</audio>
+<audio id="rehehehe95">
+    <source src="./audio/rehehehe.mp3" type="audio/mp3">
+</audio>
+<audio id="badjoke95">
+    <source src="./audio/badjoke.mp3">
+</audio>
+<audio id="joke95">
+    <source src="./audio/badumtss.mp3">
+</audio>
+
+<script src="./js/load.js"></script>
+<script src="./js/win95sound.js"></script>
+<script src="./js/fansound.js"></script>
+<script src="./js/window/trollpopup.js"></script>
+<script src="./js/window/pcpopup.js"></script>
+<script src="./js/window/trashpopup.js"></script>
+<script src="./js/window/idp.js"></script>
+</body>
+</html>
